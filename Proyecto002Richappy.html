@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Proyecto001Richappy</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body id="body">
+    <div>
+      <header>
+        <h1 id="title">Formulario de Registro</h1>
+        <p id="description">¡Estás a un paso de formar parte!</p>
+      </header>
+      <form id="survey-form">
+        <div>
+          <label id="name-label" for="name">Nombre y Apellido</label>
+          <input type="text" name="name" id="name" placeholder="ingresa tu nombre y apellido" required>
+        </div>
+        <div>
+          <label id="pais-label" for="pais">País</label>
+          <input type="text" name="pais" id="pais" placeholder="ingresa el país donde resides" required>
+        </div>
+        <div>
+          <label id="number" for="number">Edad</label>
+          <input type="number" name="numer" id="number" placeholder="" min="18" max="99" required>
+        </div>
+        <div>
+          <label id="email-label" for="email">E-mail</label>
+          <input type="email" name="email" id="email" placeholder="ingresa tu correo" required>
+        </div>
+        <div>
+          <p id="parraf">¿Qué tipo de miembro te gustaría ser?</p>
+          <select id="dropdown" name="role" required>
+            <option disabled selected value>Seleccionar tipo de membresia</option>
+            <option value="Gratuita">Gratuita</option>
+            <option value="Profesional">Profesional</option>
+          </select>
+        </div>
+        <div>
+          <p id="parraf">Selecciona qué te gustaría recibir:</p>
+          <label>
+            <input name="choise1" value="Ofertas" type="checkbox">Ofertas
+          </label>
+          <label>
+            <input name="choise2" value="Noticias" type="checkbox">Noticias
+          </label>
+          <label>
+            <input name="choise3" value="Notificaciones de Lives" type="checkbox">Notificaciones de Lives
+          </label>
+        </div>
+        <div>
+          <p id="parraf">Selecciona tu día preferido para asistir:</p>
+          <label>
+            <input name="choise-radio" value="Lunes" type="radio">Lunes
+          </label>
+          <label>
+            <input name="choise-radio" value="Miercoles" type="radio">Miércoles
+          </label>
+          <label>
+            <input name="choise-radio" value="Viernes" type="radio">Viernes
+          </label>
+        </div>
+        <div>
+          <p>Si quieres dejarnos algún comentario, puedes escribirlo aquí:</p>
+          <textarea id="comments" name="comment" placeholder="Tu comentario aquí"></textarea>
+        </div>
+        <div>
+          <button type="submit" id="submit">¡Enviar y Suscribirme!</button>
+        </div>
+      </form>
+    </div>
+  </body>
+  <br>
+  <footer id="footer">
+Formulario Proyecto de un alumno de FreeCodeCamp
+  </footer>
